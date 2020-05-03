@@ -21,7 +21,7 @@ if (!function_exists('pinyin')) {
      *
      * @return string
      */
-    function pinyin($string, $option = Pinyin::NONE)
+    function pinyin($string, $option = PINYIN_NO_TONE)
     {
         return app(Pinyin::class)->convert($string, $option);
     }
